@@ -27,6 +27,13 @@
             </label>
             <br>
             <br>
+            
+            <!--
+            Instead of wrapping a form button inside of an anchor,
+            just style the anchor as a button which links to the lostpassword URL.
+            Also, it seems that the button is supposed to also update settings,
+            but this probably wont process because it is inside of an anchor tag with an href.
+            -->
             <a href="<?php echo  $cpr_site_url . '/wp-login.php?action=lostpassword'; ?>">
                 <button type="button" name="cpr-goto-pwreset">Go To Password Reset Page</button>
             </a>
