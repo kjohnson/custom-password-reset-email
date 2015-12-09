@@ -3,6 +3,8 @@
         <div>
             <label>
                 From Name:<br>
+                <!-- Instead of function calls in the template, the template should recieve populated variables. -->
+                <!-- Example: <input type="text" name="cpr-from-name" value="<?php echo $from_name; ?>"> -->
                 <input type="text" name="cpr-from-name" value="<?php echo get_option( 'cpr_from_name_option' ); ?>">
             </label>
             <br>
