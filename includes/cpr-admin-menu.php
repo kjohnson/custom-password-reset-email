@@ -23,8 +23,16 @@ class register_admin_menu
 
     public function cpr_admin_callback()
     {
+        /*
+        I would suggest that you go ahead and build the URL here,
+        instead of passing a chunk of the final URL.
+        */
         $cpr_site_url = get_site_url();
 
+        /*
+        Also, you should move function calls (ie get_option)
+        inside of the class, then pass variables to the template.
+        */
         include( Custom_Password_Reset_Email::$dir . 'includes/cpr-admin-template.html.php' );
     }
 }
