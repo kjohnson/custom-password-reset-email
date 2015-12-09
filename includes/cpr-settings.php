@@ -18,6 +18,10 @@ class cpr_add_options
             $this->cpr_update_options( $_POST );
         }
 
+        /*
+        The hyperlinked button shouldn't need to update settings.
+        It probably won't process anyway, being inside of the hyperlink.
+        */
         if (isset($_POST[ 'cpr-goto-pwreset' ] ) ) {
 
             $this->cpr_update_options( $_POST );
