@@ -25,6 +25,7 @@
             </label>
             <h5>Insert {password_key} shortcode where ever you would like the email password key to appear in your email.</h5>
             <label>
+                <!-- As Kevin mentioned, the WordPress admin has button classes that you can use. -->
                 <input type="submit" name="cpr-submit">
             </label>
             <br>
