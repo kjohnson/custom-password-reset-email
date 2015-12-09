@@ -12,6 +12,7 @@ class register_admin_menu
 
     public function cpr_admin_menu()
     {
+        // The plain text should be translatable.
         add_options_page(
             'Password Reset Email',
             'Password Reset Email',
